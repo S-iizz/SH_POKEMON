@@ -1,0 +1,28 @@
+#pokemon-section-2.battle-bg {
+  background: url("img/bg2.png") center center / cover no-repeat;
+}
+
+.phase2-overlay {
+  position: fixed;
+  inset: 0;
+  background: #000000;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.fight-skill {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  line-height: 1.2;
+}
+
+.fight-skill .skill-desc {
+  display: block;
+  font-size: 1rem;
+  margin-top: 0.1rem;
+  color: #bcbcbc;
+  pointer-events: none;
+}

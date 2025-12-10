@@ -1,0 +1,52 @@
+.pokemon-section {
+  display: none;
+  min-height: 100vh;
+  background: #0d0d0d;
+  color: #ffffff;
+}
+
+.pokemon-section.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.loading-screen {
+  text-align: center;
+}
+
+.loading-text {
+  font-family: 'Galmuri11';
+  font-size: 3rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.loading-bar {
+  width: 30rem;
+  height: 2rem;
+  border: 0.125rem solid #ffffff;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.loading-bar-fill {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  transform-origin: left;
+  animation: loading-fill 1.5s linear forwards;
+}
+
+@keyframes loading-fill {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}

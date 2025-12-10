@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SH POKEMON</title>
+
+  <!-- 갈무리 폰트 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css" />
+
+  <!-- 인트로 css -->
+  <link rel="stylesheet" href="intro-style.css">
+
+  <!-- 포켓몬 로딩 css -->
+  <link rel="stylesheet" href="pokemon-intro.css">
+
+  <!-- 포켓몬 전투 1페이즈 css -->
+  <link rel="stylesheet" href="pokemon-battle1.css">
+
+  <!-- 포켓몬 전투 2페이즈 css -->
+  <link rel="stylesheet" href="pokemon-battle2.css">
+  <!-- 엔딩 css -->
+  <link rel="stylesheet" href="ending.css">
+
+</head>
+
+<body>
+  <!-- 고양이 SVG 인트로 -->
+  <section class="intro-cat-wrapper">
+    <svg class="intro-cat-svg" width="122" height="174" viewBox="0 0 132 174" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <!-- 꼬리 -->
+      <g id="cat-tail">
+        <rect x="78" y="144" width="20" height="12" fill="#0D0D0D" />
+        <rect x="98" y="132" width="12" height="12" fill="#0D0D0D" />
+        <rect x="110" y="100" width="12" height="32" fill="#0D0D0D" />
+      </g>
+
+      <!-- 몸 전체 -->
+      <rect x="52" y="24" width="39" height="57" fill="#0D0D0D" />
+      <rect x="52" y="35" width="28" height="57" fill="#0D0D0D" />
+      <rect x="76" y="35" width="28" height="12" fill="#0D0D0D" />
+
+      <!-- 오른쪽 귀 -->
+      <g class="cat-ears">
+        <rect x="68" y="12" width="23" height="15" fill="#0D0D0D" />
+        <rect x="79" width="12" height="27" fill="#0D0D0D" />
+      </g>
+
+      <rect x="76" y="58" width="28" height="12" fill="#0D0D0D" />
+      <rect x="52" y="89" width="14" height="85" fill="#0D0D0D" />
+      <rect x="62" y="102" width="14" height="72" fill="#0D0D0D" />
+      <rect x="74" y="113" width="14" height="61" fill="#0D0D0D" />
+      <rect x="84" y="164" width="14" height="10" fill="#0D0D0D" />
+      <rect width="42" height="57" transform="matrix(-1 0 0 1 55 24)" fill="#0D0D0D" />
+      <rect width="31" height="57" transform="matrix(-1 0 0 1 55 35)" fill="#0D0D0D" />
+      <rect width="28" height="12" transform="matrix(-1 0 0 1 28 35)" fill="#0D0D0D" />
+
+      <!-- 왼쪽 귀 -->
+      <g class="cat-ears">
+        <rect width="23" height="15" transform="matrix(-1 0 0 1 36 12)" fill="#0D0D0D" />
+        <rect width="12" height="27" transform="matrix(-1 0 0 1 25 0)" fill="#0D0D0D" />
+      </g>
+
+      <rect width="28" height="12" transform="matrix(-1 0 0 1 28 58)" fill="#0D0D0D" />
+      <rect width="17" height="85" transform="matrix(-1 0 0 1 55 89)" fill="#0D0D0D" />
+      <rect width="14" height="72" transform="matrix(-1 0 0 1 42 102)" fill="#0D0D0D" />
+      <rect width="14" height="61" transform="matrix(-1 0 0 1 30 113)" fill="#0D0D0D" />
+      <rect width="14" height="10" transform="matrix(-1 0 0 1 20 164)" fill="#0D0D0D" />
+
+      <rect x="48" y="61" width="7" height="4" fill="#D9D9D9" />
+      <rect x="50" y="62" width="3" height="10" fill="#D9D9D9" />
+      <rect x="49" y="71" width="1" height="2" fill="#D9D9D9" />
+      <rect width="1" height="2" transform="matrix(-1 0 0 1 54 71)" fill="#D9D9D9" />
+      <rect x="48" y="72" width="1" height="2" fill="#D9D9D9" />
+      <rect width="1" height="2" transform="matrix(-1 0 0 1 55 72)" fill="#D9D9D9" />
+      <rect x="47" y="73" width="1" height="1" fill="#D9D9D9" />
+      <rect width="1" height="1" transform="matrix(-1 0 0 1 56 73)" fill="#D9D9D9" />
+      <rect x="45" y="74" width="2" height="1" fill="#D9D9D9" />
+      <rect width="2" height="1" transform="matrix(-1 0 0 1 58 74)" fill="#D9D9D9" />
+      <rect x="43" y="73" width="2" height="1" fill="#D9D9D9" />
+      <rect width="2" height="1" transform="matrix(-1 0 0 1 60 73)" fill="#D9D9D9" />
+      <rect x="41" y="72" width="2" height="1" fill="#D9D9D9" />
+      <rect width="2" height="1" transform="matrix(-1 0 0 1 62 72)" fill="#D9D9D9" />
+
+      <!-- 눈 -->
+      <rect x="61" y="52" width="11" height="4" fill="#D5D5D5" class="cat-eye cat-eye-right" />
+      <rect x="31" y="52" width="11" height="4" fill="#D5D5D5" class="cat-eye cat-eye-left" />
+    </svg>
+
+    <div class="intro-texts">
+      <p class="intro-text-line line-1">HI, I'M</p>
+      <p class="intro-text-line line-2">SEOHYUN</p>
+      <p class="intro-text-line line-3 intro-start-text">
+        CLICK HERE TO START
+      </p>
+    </div>
+  </section>
+
+  <!-- 인트로 -->
+  <main class="intro-wrapper">
+    <div class="intro-stage">
+      <img id="switch-off" class="switch-off" src="img/switch-off.png" alt="Nintendo Switch Off" />
+      <img id="pokemon-soft" class="pokemon-soft" src="img/pokemon-soft.png" alt="Pokemon Software" />
+      <img id="game-chip" class="game-chip" src="img/gamechip.png" alt="Game Cartridge" />
+    </div>
+  </main>
+
+  <!-- 포켓몬 전투 섹션 -->
+  <section id="pokemon-section" class="pokemon-section">
+    <!-- 로딩 -->
+    <div class="loading-screen">
+      <div class="loading-text">LOADING . . .</div>
+      <div class="loading-bar">
+        <div class="loading-bar-fill"></div>
+      </div>
+    </div>
+
+    <!-- 로딩 끝나고 대사 + 포켓몬 등장 -->
+    <div class="battle-intro">
+      <img src="img/pokemon1.gif" alt="Pokemon" class="intro-pokemon" />
+    </div>
+
+    <!-- 포켓몬 이름 + hp바 -->
+    <div class="enemy-status">
+      <div class="enemy-name">데드라이너</div>
+      <div class="enemy-hp-bar">
+        <div class="enemy-hp-fill"></div>
+      </div>
+    </div>
+
+    <!-- 내 이름 + hp바 -->
+    <div class="player-status">
+      <div class="player-box">
+        <div class="player-name">나</div>
+        <div class="player-hp-bar">
+          <div class="player-hp-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 싸운다 버튼 -->
+    <button class="fight-button ui-button">싸운다</button>
+
+    <!-- 싸운다 버튼 클릭 후 기술 버튼 4개 -->
+    <div class="fight-skills">
+      <button class="fight-skill ui-button">멘탈 실드</button>
+      <button class="fight-skill ui-button">리트라이</button>
+      <button class="fight-skill ui-button">디버그 스트라이크</button>
+      <button class="fight-skill ui-button">HP 회복</button>
+    </div>
+
+    <!-- 대사창 -->
+    <div class="dialog">
+      <div class="dialog-inner">
+        <p class="dialog-text"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= 포켓몬 전투 2페이즈 ======================= -->
+  <section id="pokemon-section-2" class="pokemon-section">
+    <div class="battle-intro">
+      <img src="img/pokemon2.gif" alt="Pokemon" class="intro-pokemon" />
+    </div>
+
+    <div class="enemy-status">
+      <div class="enemy-name">버그스크린</div>
+      <div class="enemy-hp-bar">
+        <div class="enemy-hp-fill"></div>
+      </div>
+    </div>
+
+    <div class="player-status">
+      <div class="player-box">
+        <div class="player-name">나</div>
+        <div class="player-hp-bar">
+          <div class="player-hp-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <button class="fight-button ui-button">싸운다</button>
+
+    <div class="fight-skills">
+      <button class="fight-skill ui-button">디버그 스트라이크</button>
+      <button class="fight-skill ui-button">컷편집 스톰</button>
+      <button class="fight-skill ui-button">리트라이</button>
+      <button class="fight-skill ui-button">HP 회복</button>
+    </div>
+
+    <div class="dialog">
+      <div class="dialog-inner">
+        <p class="dialog-text"></p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- 인트로 js -->
+  <script src="intro-script.js"></script>
+  <!-- 포켓몬 로딩 js -->
+  <script src="pokemon-intro.js"></script>
+  <!-- 포켓몬 전투 js -->
+  <script src="pokemon-battle1.js"></script>
+
+  <!-- 포켓몬 전투 2페이즈 js -->
+  <script src="pokemon-battle2.js"></script>
+  <!-- 엔딩 js -->
+  <script src="ending.js"></script>
+</body>
+
+</html>
