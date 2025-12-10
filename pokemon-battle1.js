@@ -322,7 +322,7 @@ document.addEventListener("DOMContentLoaded", () => {
       introPokemon.classList.add("show");
     }
 
-    showDialog("야생의 데드라이너가 나타났다!", () => {
+    showDialog("앗! 정신력 타입 포켓몬 데드라이너가 나타났다!", () => {
       if (enemyStatus) enemyStatus.classList.add("show");
       if (playerStatus) playerStatus.classList.add("show");
       if (fightButton) fightButton.classList.add("show");

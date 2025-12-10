@@ -454,7 +454,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 introPokemon.classList.add("show");
             }
 
-            showDialog2("야생의 버그스크린이 나타났다!", () => {
+            showDialog2("앗! 기술 타입 포켓몬 버그스크린이 나타났다!", () => {
                 if (enemyStatus) enemyStatus.classList.add("show");
                 if (playerStatus) playerStatus.classList.add("show");
                 if (fightButton) fightButton.classList.add("show");
